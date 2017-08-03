@@ -1,10 +1,18 @@
-# Drupal 8 Composer Installer
+# Drupal Composer Installer
 
-Composer based Drupal 8 installer.
+Composer based Drupal installer for Drupal 7 and 8.
 
 ## Usage
+
+The versioning is as per Drupal, to grab latest version
 ```
 composer create-project shahinam/drupal-installer:7.x-dev MY_PROJECT
+composer create-project shahinam/drupal-installer:8.x-dev MY_PROJECT
+```
+
+Or grab a tagged version
+```
+composer create-project shahinam/drupal-installer:8.3 MY_PROJECT
 ```
 
 ## Basic composer usage
