@@ -15,9 +15,6 @@
         "drupal/drupal": "7.*"
     },
     "scripts": {
-        "post-create-project-cmd": [
-            "@composer clean-files"
-        ],
         "post-install-cmd": [
             "@composer clean-files"
         ],
