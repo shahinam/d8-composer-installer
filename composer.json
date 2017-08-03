@@ -1,6 +1,6 @@
 {
     "name": "shahinam/drupal-installer",
-    "description": "Project template for Drupal 8 builds.",
+    "description": "Project template for Drupal builds.",
     "type": "project",
     "license": "MIT",
     "minimum-stability": "dev",
