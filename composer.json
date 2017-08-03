@@ -1,0 +1,80 @@
+{
+    "name": "shahinam/drupal-installer",
+    "description": "Project template for Drupal 7 builds.",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+    ],
+    "require": {
+        "composer/installers": "^1.3",
+        "oomphinc/composer-installers-extender": "^1.1",
+        "cweagans/composer-patches": "^1.6",
+        "drupal-composer/preserve-paths": "0.1.*",
+        "drupal/drupal": "7.*"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@composer clean-files"
+        ],
+        "post-install-cmd": [
+            "@composer clean-files"
+        ],
+        "post-update-cmd": [
+            "@composer clean-files"
+        ],
+        "clean-files": "rm -f docroot/.gitignore"
+    },
+    "extra": {
+        "enable-patching": true,
+        "patches": {
+        },
+        "installer-paths": {
+            "docroot": [
+                "type:drupal-core"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "docroot/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "docroot/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "docroot/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        },
+        "preserve-paths": [
+            "docroot/sites/all/drush",
+            "docroot/sites/all/libraries",
+            "docroot/sites/all/modules/contrib",
+            "docroot/sites/all/modules/custom",
+            "docroot/sites/all/modules/features",
+            "docroot/sites/all/themes/contrib",
+            "docroot/sites/all/themes/custom",
+            "docroot/sites/all/translations",
+            "docroot/sites/default"
+        ]
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/7"
+        }
+    }
+}
