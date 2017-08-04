@@ -31,10 +31,10 @@
             "docroot": [
                 "type:drupal-core"
             ],
-            "docroot/modules/contrib/{$name}": [
+            "docroot/sites/all/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "docroot/modules/custom/{$name}": [
+            "docroot/sites/all/modules/custom/{$name}": [
                 "type:drupal-custom-module"
             ],
             "docroot/profiles/contrib/{$name}": [
@@ -43,16 +43,16 @@
             "docroot/profiles/custom/{$name}": [
                 "type:drupal-custom-profile"
             ],
-            "docroot/themes/contrib/{$name}": [
+            "docroot/sites/all/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
-            "docroot/themes/custom/{$name}": [
+            "docroot/sites/all/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
             ],
-            "docroot/libraries/{$name}": [
+            "docroot/sites/all/libraries/{$name}": [
                 "type:drupal-library"
             ],
-            "drush/contrib/{$name}": [
+            "drush/sites/all/contrib/{$name}": [
                 "type:drupal-drush"
             ]
         },
